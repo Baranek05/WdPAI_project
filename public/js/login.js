@@ -2,7 +2,7 @@ const loginButton = document.getElementById('login')
 const usernameInput = document.getElementById('username')
 const passwordInput = document.getElementById('password')
 
-// TODO Use AJAX to set cookies only on success
+
 loginButton.addEventListener('click', event => {
     const formData = new FormData()
     console.log("test")
@@ -13,10 +13,8 @@ loginButton.addEventListener('click', event => {
         body: formData,
 
     }).then(response => {
-        //if (response.statusCode == 200) {
             setCookie('sessionStarted', Date.now(), 310)
             setCookie('user', usernameInput.value, 310)
-        //}
     })
 })
 

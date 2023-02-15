@@ -1,6 +1,6 @@
 <?php
 
-//namespace src\models;
+
 class Flight
 {
     private $flightInfo;

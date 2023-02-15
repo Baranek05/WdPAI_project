@@ -78,9 +78,9 @@
                     </div>
                 </div>
                 <div class="atc-cell row2">
-                    <h3>RUNAWAY</h3>
-                    <div id='runaway' class="atc-field">
-                        <?php includeWithVariables('public/views/helpers/flights_entry.php', array('flights' => $runaway)) ?>
+                    <h3>RUNWAY</h3>
+                    <div id='runway' class="atc-field">
+                        <?php includeWithVariables('public/views/helpers/flights_entry.php', array('flights' => $runway)) ?>
                     </div>
                 </div>
               </div> 

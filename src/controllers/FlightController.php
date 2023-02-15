@@ -17,7 +17,7 @@ class FlightController extends AppController
         $departureFlights = $this->flightRepository->getFlightsByState('departure');
         $onStandFlights = $this->flightRepository->getFlightsByState('onStand');
         $taxiFlights = $this->flightRepository->getFlightsByState('taxi');
-        $runawayFlights = $this->flightRepository->getFlightsByState('runaway');
+        $runwayFlights = $this->flightRepository->getFlightsByState('runway');
 
         return [
             'hold' => $holdFlights,
@@ -25,7 +25,7 @@ class FlightController extends AppController
             'departure' => $departureFlights,
             'onStand' => $onStandFlights,
             'taxi' => $taxiFlights,
-            'runaway' => $runawayFlights
+            'runway' => $runwayFlights
         ];
     }
 
